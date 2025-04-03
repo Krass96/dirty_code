@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'menu_box.dart';
 
 class DirtyScreenFour extends StatelessWidget {
   const DirtyScreenFour({super.key});
@@ -8,82 +9,19 @@ class DirtyScreenFour extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #4"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.blueAccent,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.home, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text(
-                    'Home',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.greenAccent,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.work, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text(
-                    'Work',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.orangeAccent,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.school, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text(
-                    'School',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.purpleAccent,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.directions_bike, color: Colors.white),
-                  SizedBox(width: 8),
-                  Text(
-                    'Bike',
-                    style: TextStyle(fontSize: 20, color: Colors.white),
-                  ),
-                ],
-              ),
-            ),
+            MenuBox(icon: Icons.home, label: 'Home', color: Colors.blueAccent),
+            MenuBox(
+                icon: Icons.work, label: 'Work', color: Colors.orangeAccent),
+            MenuBox(
+                icon: Icons.school, label: 'School', color: Colors.greenAccent),
+            MenuBox(
+                icon: Icons.pedal_bike,
+                label: 'Bike',
+                color: Colors.purpleAccent),
           ],
         ),
       ),
