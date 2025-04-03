@@ -1,3 +1,4 @@
+import 'mathe_class.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenNine extends StatelessWidget {
@@ -15,49 +16,25 @@ class DirtyScreenNine extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
-                children: [
-                  Text('4', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('5', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('9', style: TextStyle(fontSize: 24)),
-                ],
+                children: [MatheClass(number1: 4, number2: 5, number3: 9)],
               ),
             ),
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
-                children: [
-                  Text('3', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('3', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('6', style: TextStyle(fontSize: 24)),
-                ],
+                children: [MatheClass(number1: 3, number2: 3, number3: 6)],
               ),
             ),
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
-                children: [
-                  Text('2', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('8', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('10', style: TextStyle(fontSize: 24)),
-                ],
+                children: [MatheClass(number1: 2, number2: 8, number3: 10)],
               ),
             ),
             Padding(
               padding: EdgeInsets.all(16.0),
               child: Row(
-                children: [
-                  Text('7', style: TextStyle(fontSize: 24)),
-                  Text(' + ', style: TextStyle(fontSize: 24)),
-                  Text('1', style: TextStyle(fontSize: 24)),
-                  Text(' = ', style: TextStyle(fontSize: 24)),
-                  Text('8', style: TextStyle(fontSize: 24)),
-                ],
+                children: [MatheClass(number1: 7, number2: 1, number3: 8)],
               ),
             ),
           ],
